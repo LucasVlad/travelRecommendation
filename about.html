@@ -1,0 +1,267 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Poppins", sans-serif;
+            }
+
+            body {
+                min-height: 100vh;
+                background:
+                    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                    url("travel_home_bg.webp") no-repeat center center fixed;
+                background-size: cover;
+                color: #ffffff;
+            }
+
+            nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.5rem 2rem;
+                background-color: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+            }
+
+            .logo {
+                font-size: 1.8rem;
+                font-weight: 600;
+                letter-spacing: 1px;
+                color: #ffffff;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            }
+
+            .nav-links {
+                display: flex;
+                gap: 2rem;
+                margin-left: 3rem;
+            }
+
+            .nav-links a {
+                text-decoration: none;
+                color: #ffffff;
+                font-weight: 400;
+                transition: all 0.3s ease;
+                position: relative;
+                font-size: 1.1rem;
+            }
+
+            .nav-links a:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                bottom: -4px;
+                left: 0;
+                background-color: #e6b17e;
+                transition: width 0.3s ease;
+            }
+
+            .nav-links a:hover:after {
+                width: 100%;
+            }
+
+            .about-content {
+                margin-top: 100px;
+                padding: 2rem 4rem;
+                max-width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+                overflow-y: auto;
+                height: calc(100vh - 100px);
+            }
+
+            .about-header {
+                text-align: center;
+                margin-bottom: 3rem;
+            }
+
+            .about-header h2 {
+                font-size: 3rem;
+                margin-bottom: 1.5rem;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+
+            .company-info {
+                margin-bottom: 4rem;
+                line-height: 1.8;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            }
+
+            .team-section {
+                margin-top: 2rem;
+            }
+
+            .team-section h3 {
+                text-align: center;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+
+            .team-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+                padding: 1rem;
+            }
+
+            .team-member {
+                background-color: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                padding: 2rem;
+                border-radius: 10px;
+                text-align: center;
+                transition: transform 0.3s ease;
+            }
+
+            .team-member:hover {
+                transform: translateY(-5px);
+            }
+
+            .team-member img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+                border: 3px solid #e6b17e;
+            }
+
+            .team-member h4 {
+                color: #e6b17e;
+                margin-bottom: 0.5rem;
+            }
+
+            .team-member p {
+                font-size: 0.9rem;
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+            .social-links {
+                position: fixed;
+                left: 2rem;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .social-links a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.5rem;
+                transition: color 0.3s ease;
+            }
+
+            .social-links a:hover {
+                color: #e6b17e;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <div style="display: flex; align-items: center">
+                <h1 class="logo">TravelNation</h1>
+                <div class="nav-links">
+                    <a href="travel_recommendation.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="about-content">
+            <div class="about-header">
+                <h2>About Us</h2>
+            </div>
+
+            <div class="company-info">
+                <p>
+                    Founded in 2020, TravelNation emerged from a simple yet
+                    powerful idea: everyone deserves to experience the perfect
+                    vacation tailored to their unique preferences. We combine
+                    cutting-edge technology with human expertise to create
+                    personalized travel recommendations that transform ordinary
+                    trips into extraordinary adventures.
+                </p>
+                <br />
+                <p>
+                    Our platform analyzes thousands of destinations, reviews,
+                    and travel patterns to match you with locations that align
+                    with your interests, budget, and desired experience. Whether
+                    you're an adventure seeker looking for your next adrenaline
+                    rush, a culture enthusiast wanting to immerse yourself in
+                    new traditions, or someone seeking peaceful retreats, we're
+                    here to guide you to your ideal destination.
+                </p>
+            </div>
+
+            <div class="team-section">
+                <h3>Meet Our Team</h3>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <h4>Sarah Chen</h4>
+                        <p>Founder & CEO</p>
+                        <p>
+                            Former travel journalist with 15 years of global
+                            exploration experience
+                        </p>
+                    </div>
+                    <div class="team-member">
+                        <h4>Marcus Rodriguez</h4>
+                        <p>Head of Travel Curation</p>
+                        <p>
+                            Expert in sustainable tourism and cultural
+                            preservation
+                        </p>
+                    </div>
+                    <div class="team-member">
+                        <h4>James Thompson</h4>
+                        <p>Customer Experience Director</p>
+                        <p>
+                            Dedicated to creating seamless travel planning
+                            experiences
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank"
+                ><i class="fab fa-x-twitter"></i
+            ></a>
+            <a href="https://instagram.com" target="_blank"
+                ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank"
+                ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://linkedin.com" target="_blank"
+                ><i class="fab fa-linkedin"></i
+            ></a>
+        </div>
+    </body>
+</html>
